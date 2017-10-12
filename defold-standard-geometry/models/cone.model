@@ -1,5 +1,5 @@
 mesh: "/defold-standard-geometry/dae/cone.dae"
-material: "/defold-standard-geometry/materials/model.material"
+material: "/defold-standard-geometry/materials/test/model.material"
 textures: "/defold-standard-geometry/textures/uv-checker.png"
 skeleton: ""
 animations: ""

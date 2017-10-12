@@ -10,6 +10,7 @@ game_binding = /example/main.input_bindingc
 
 [bootstrap]
 main_collection = /example/main.collectionc
+render = /defold-standard-geometry/render/default.renderc
 
 [physics]
 type = 3D

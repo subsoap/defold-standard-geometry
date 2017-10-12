@@ -36,9 +36,9 @@ embedded_instances {
   "  id: \"cube\"\n"
   "  component: \"/defold-standard-geometry/models/cube.model\"\n"
   "  position {\n"
-  "    x: 0.0\n"
+  "    x: 1.0\n"
   "    y: 0.0\n"
-  "    z: 2.582\n"
+  "    z: 3.669\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -172,6 +172,61 @@ embedded_instances {
     x: 0.0
     y: 0.0
     z: -4.672
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "go1"
+  data: "components {\n"
+  "  id: \"quad\"\n"
+  "  component: \"/defold-standard-geometry/models/quad.model\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: -0.70710677
+    y: 0.0
+    z: 0.0
+    w: 0.70710677
+  }
+  scale3 {
+    x: 20000.0
+    y: 20000.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "go2"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
   }
   rotation {
     x: 0.0
