@@ -212,6 +212,111 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
+  "components {\n"
+  "  id: \"caltrop\"\n"
+  "  component: \"/defold-standard-geometry/models/caltrop.model\"\n"
+  "  position {\n"
+  "    x: -4.0\n"
+  "    y: 1.0\n"
+  "    z: 7.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"hemisphere\"\n"
+  "  component: \"/defold-standard-geometry/models/hemisphere.model\"\n"
+  "  position {\n"
+  "    x: 8.0\n"
+  "    y: 2.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"hexagon\"\n"
+  "  component: \"/defold-standard-geometry/models/hexagon.model\"\n"
+  "  position {\n"
+  "    x: 9.0\n"
+  "    y: 0.0\n"
+  "    z: 2.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"hexagon_platform\"\n"
+  "  component: \"/defold-standard-geometry/models/hexagon_platform.model\"\n"
+  "  position {\n"
+  "    x: -12.0\n"
+  "    y: 0.0\n"
+  "    z: -3.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"prism\"\n"
+  "  component: \"/defold-standard-geometry/models/prism.model\"\n"
+  "  position {\n"
+  "    x: -4.0\n"
+  "    y: 0.0\n"
+  "    z: 11.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"sphere_inverted\"\n"
+  "  component: \"/defold-standard-geometry/models/sphere_inverted.model\"\n"
+  "  position {\n"
+  "    x: -8.0\n"
+  "    y: 2.0\n"
+  "    z: -2.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"diamond1\"\n"
+  "  component: \"/defold-standard-geometry/models/diamond.model\"\n"
+  "  position {\n"
+  "    x: -8.0\n"
+  "    y: 8.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
   ""
   position {
     x: 0.0
@@ -250,7 +355,7 @@ embedded_instances {
   ""
   position {
     x: 0.0
-    y: 0.0
+    y: -1.0
     z: 0.0
   }
   rotation {
@@ -283,5 +388,40 @@ embedded_instances {
     x: 1.0
     y: 1.0
     z: 1.0
+  }
+}
+embedded_instances {
+  id: "sphere_inverted"
+  data: "components {\n"
+  "  id: \"sphere_inverted\"\n"
+  "  component: \"/defold-standard-geometry/models/sphere_inverted.model\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: -2.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 80.0
+    y: 80.0
+    z: 80.0
   }
 }
