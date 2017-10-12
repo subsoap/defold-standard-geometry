@@ -1,4 +1,4 @@
-# Defold-Standard-Geometry
+# Defold Standard Geometry
 A set of 3D .dae models prepared for use with Defold.
 
 Also includes basic material shaders.
@@ -10,3 +10,5 @@ Meters are the basic unit in Defold. 1 pixel in default orthographic view is equ
 If you are a 3d modeler and would like to contribute improved or additional models please do.
 
 Use ctrl/alt to pan, rotate and mouse wheel to zoom in views.
+
+![](https://raw.githubusercontent.com/subsoap/Defold-Standard-Geometry/master/defold-standard-geometry/docs/img.png)
