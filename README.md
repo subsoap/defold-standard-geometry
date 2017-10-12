@@ -11,8 +11,4 @@ If you are a 3d modeler and would like to contribute improved or additional mode
 
 Use ctrl/alt to pan, rotate and mouse wheel to zoom in views.
 
-<<<<<<< HEAD
 ![](https://raw.githubusercontent.com/subsoap/Defold-Standard-Geometry/master/defold-standard-geometry/docs/img4.png)
-=======
-![pic](https://raw.githubusercontent.com/subsoap/Defold-Standard-Geometry/master/docs/img.png)
->>>>>>> origin/master
