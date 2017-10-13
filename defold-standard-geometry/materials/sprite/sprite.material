@@ -1,6 +1,5 @@
 name: "model"
 tags: "sprite"
-tags: "3d"
 vertex_program: "/defold-standard-geometry/materials/sprite/wall.vp"
 fragment_program: "/defold-standard-geometry/materials/sprite/sprite.fp"
 vertex_constants {

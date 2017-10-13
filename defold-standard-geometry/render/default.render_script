@@ -8,6 +8,7 @@ function init(self)
 
 
     self.threede_pred = render.predicate({"3d"})
+    self.sprite_pred = render.predicate({"sprite"})
     
     self.clear_color = vmath.vector4(0, 0, 0, 0)
     self.clear_color.x = sys.get_config("render.clear_color_red", 0)
@@ -64,6 +65,9 @@ function update(self)
     render.disable_state(render.STATE_STENCIL_TEST)
     render.enable_state(render.STATE_BLEND)
     render.set_blend_func(render.BLEND_SRC_ALPHA, render.BLEND_ONE_MINUS_SRC_ALPHA)
+    --render.enable_state(render.STATE_DEPTH_TEST)
+    render.draw(self.sprite_pred)
+    render.disable_state(render.STATE_DEPTH_TEST)
     render.disable_state(render.STATE_CULL_FACE)
 
     render.set_view(vmath.matrix4())
