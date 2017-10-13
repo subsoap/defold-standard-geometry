@@ -51,7 +51,7 @@ function update(self)
 	render.draw(self.threede_pred)
 	
 	--
-	
+	render.draw_debug3d()
     render.disable_state(render.STATE_DEPTH_TEST)
     render.disable_state(render.STATE_STENCIL_TEST)
     render.enable_state(render.STATE_BLEND)
@@ -66,7 +66,7 @@ function update(self)
     render.draw(self.text_pred)
     render.disable_state(render.STATE_STENCIL_TEST)
 
-
+    render.draw_debug2d()
 
 end
 
