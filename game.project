@@ -16,3 +16,6 @@ render = /defold-standard-geometry/render/default.renderc
 type = 3D
 debug = 1
 
+[script]
+shared_state = 1
+

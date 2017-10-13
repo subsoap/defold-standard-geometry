@@ -1,3 +1,5 @@
+local camera = require("example.camera_helper")
+
 
 function init(self)
 
@@ -24,6 +26,8 @@ function update(self)
 	
 	self.timer = self.timer + 0.01
 
+	camera.window_width = render.get_window_width()
+	camera.window_height = render.get_window_height()
     
     ----------------------------------------------------------------------------------------
     -- setup viewport and clear the screen
@@ -34,6 +38,8 @@ function update(self)
     render.enable_state(render.STATE_DEPTH_TEST)
     render.set_depth_mask(true)
     
+    
+    --[[
     -- create view and projection matrices
     local cam_lookat = vmath.vector3(0.0,0.0,0.0)
     local cam_pos = vmath.vector3(-10.0,10.0 * math.abs(math.sin(self.timer * 0.2) * 3),1.0 + math.sin(self.timer) * 3 * 4)
@@ -43,9 +49,11 @@ function update(self)
     local fov = (math.pi / 180.0) * 60.0 -- 60 degrees
     local proj_mtx = vmath.matrix4_perspective(fov, render.get_window_width() / render.get_window_height(), 0.1, 100.0)
     
+    --]]
+    
     -- set matrices
-    render.set_view(view_mtx)
-    render.set_projection(proj_mtx)
+    render.set_view(camera.view_matrix)
+    render.set_projection(camera.proj_matrix)
     
     -- draw cube predicate
 	render.draw(self.threede_pred)
