@@ -9,11 +9,22 @@ input.key_q = hash("key_q")
 input.key_e = hash("key_e")
 input.key_space = hash("key_space")
 input.touch = hash("touch")
+input.mouse_button_left = hash("mouse_button_left")
 
 
 function update_auto_camera(self)
+	self.rotate_max_speed = 10
+	if self.screen_dx > 0 then
+		self.screen_dx = math.min(self.screen_dx,self.rotate_max_speed)
+	else
+		self.screen_dx = math.max(self.screen_dx,self.rotate_max_speed * -1)
+	end
+
+	self.turn = self.turn - self.screen_dx * 0.01
+	
+	
     local cam_lookat = vmath.vector3(0.0,0.0,0.0)
-    local cam_pos = vmath.vector3(math.sin(self.timer) * 10 ,10.0,math.cos(self.timer)  * 10 )
+    local cam_pos = vmath.vector3(math.sin(self.turn * 0.25) * 10 ,10.0,math.cos(self.turn * 0.25)  * 10 )
     --local cam_pos = vmath.vector3(0.0,0.0,20.0) -- this moves the camera further away
     local cam_up = vmath.vector3(0,1,0)
     local view_matrix = vmath.matrix4_look_at(cam_pos, cam_lookat, cam_up)
@@ -79,6 +90,10 @@ function init(self)
     self.forward = false
     self.backward = false
     
+    self.turn = 0
+    self.screen_dx = 0
+    self.screen_dy = 0
+    
     self.touch_down = false
     
 end
@@ -108,12 +123,17 @@ end
 
 function on_input(self, action_id, action)
 	
-	if action_id == input.touch then
+
+	
+	if action_id == input.mouse_button_left then
+		self.screen_dx = action.dx
+		self.screen_dy = action.dy
 	end
 	
 	
 	if action_id == input.key_space and action.released then
 		toggle_mode(self)
+		print("toggle")
 	end
 	
 	if action_id == input.key_a then
