@@ -1,0 +1,6 @@
+images {
+  image: "/defold-standard-geometry/textures/rocket_burst.png"
+}
+margin: 4
+extrude_borders: 0
+inner_padding: 4

@@ -1,4 +1,64 @@
 name: "default"
+instances {
+  id: "ship1"
+  prototype: "/defold-standard-geometry/gos/ship.go"
+  position {
+    x: 32.0
+    y: 3.0
+    z: -3.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "ship"
+  collection: "/defold-standard-geometry/collections/ship.collection"
+  position {
+    x: 11.0
+    y: 15.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.31340936
+    y: -0.2456893
+    z: 0.08430161
+    w: 0.91340274
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+collection_instances {
+  id: "ship_tester"
+  collection: "/defold-standard-geometry/collections/ship_tester.collection"
+  position {
+    x: 31.0
+    y: 0.0
+    z: -28.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "go"
