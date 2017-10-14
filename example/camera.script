@@ -96,6 +96,7 @@ function update(self, dt)
 	
 	self.forward = false
 	self.backward = false
+	
 end
 
 function on_message(self, message_id, message, sender)
