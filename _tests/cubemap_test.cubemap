@@ -1,0 +1,6 @@
+right: "/_tests/cubemap_textures/posx.jpg"
+left: "/_tests/cubemap_textures/negx.jpg"
+top: "/_tests/cubemap_textures/posy.jpg"
+bottom: "/_tests/cubemap_textures/negy.jpg"
+front: "/_tests/cubemap_textures/posz.jpg"
+back: "/_tests/cubemap_textures/negz.jpg"

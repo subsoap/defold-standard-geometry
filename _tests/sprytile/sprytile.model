@@ -1,0 +1,7 @@
+mesh: "/_tests/sprytile/untitled.dae"
+material: "/defold-standard-geometry/materials/test/model_pixel.material"
+textures: "/_tests/sprytile/wood_tileset.png"
+skeleton: ""
+animations: ""
+default_animation: ""
+name: "unnamed"

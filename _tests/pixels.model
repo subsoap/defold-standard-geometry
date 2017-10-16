@@ -1,0 +1,7 @@
+mesh: "/_tests/pixels_1.dae"
+material: "/defold-standard-geometry/materials/test/model_pixel.material"
+textures: "/_tests/pixels.png"
+skeleton: ""
+animations: ""
+default_animation: ""
+name: "unnamed"

@@ -9,7 +9,7 @@ include_dirs = defold-standard-geometry
 game_binding = /example/main.input_bindingc
 
 [bootstrap]
-main_collection = /example/turntable/turntable.collectionc
+main_collection = /example/main.collectionc
 render = /defold-standard-geometry/render/default.renderc
 
 [physics]

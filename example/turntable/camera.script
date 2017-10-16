@@ -7,11 +7,14 @@ input.key_s = hash("key_s")
 input.key_d = hash("key_d")
 input.key_q = hash("key_q")
 input.key_e = hash("key_e")
+
 input.key_space = hash("key_space")
 input.touch = hash("touch")
 input.mouse_button_left = hash("mouse_button_left")
 input.mouse_wheel_up = hash("mouse_wheel_up")
 input.mouse_wheel_down = hash("mouse_wheel_down")
+
+input.key_p = hash("key_p")
 
 
 function update_auto_camera(self)
@@ -130,6 +133,10 @@ function on_message(self, message_id, message, sender)
 end
 
 function on_input(self, action_id, action)
+	
+	if action_id == input.key_p and action.released then
+		msg.post("@system:", "toggle_profile")
+	end
 	
 
 	if action_id == input.mouse_wheel_down then

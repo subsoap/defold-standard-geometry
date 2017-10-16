@@ -125,3 +125,83 @@ embedded_instances {
     z: 50.0
   }
 }
+embedded_instances {
+  id: "go"
+  data: "components {\n"
+  "  id: \"untitled\"\n"
+  "  component: \"/example/turntable/3d_particles.particlefx\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.043619387\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 0.99904823\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"particles\"\n"
+  "  component: \"/example/turntable/particles.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"untitled1\"\n"
+  "  component: \"/example/turntable/3d_particles.particlefx\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: -0.6755902\n"
+  "    z: 0.0\n"
+  "    w: 0.7372773\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"untitled11\"\n"
+  "  component: \"/example/turntable/3d_particles.particlefx\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.6755902\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 0.7372773\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: -3.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
