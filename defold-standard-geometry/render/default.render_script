@@ -8,6 +8,7 @@ function init(self)
 
 
     self.threede_pred = render.predicate({"3d"})
+    self.threede_transparent_pred = render.predicate({"3d_transparent"})
     self.sprite_pred = render.predicate({"sprite"})
     
     self.clear_color = vmath.vector4(0, 0, 0, 0)
@@ -67,7 +68,9 @@ function update(self)
     render.set_blend_func(render.BLEND_SRC_ALPHA, render.BLEND_ONE_MINUS_SRC_ALPHA)
     render.enable_state(render.STATE_DEPTH_TEST)
     render.set_depth_mask(false)
+    render.draw(self.threede_transparent_pred)
     render.draw(self.sprite_pred)
+    
     render.set_depth_mask(true)
     render.disable_state(render.STATE_DEPTH_TEST)
     render.disable_state(render.STATE_CULL_FACE)
